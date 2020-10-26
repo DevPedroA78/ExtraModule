@@ -7,40 +7,53 @@ body {
     font-family: 'DM Sans', sans-serif;
 }
 
+/*Esta Clss mas potente es para reutilizar el Flex en donde se coloque*/
 .container-flex {
     display: flex;
 }
 
+/*Esta Class flexible es para cambiar la otientacion de los elementos hijos de Nav*/
+.flex-column {
+    flex-direction: column;
+}
+
+/*Esta Class reutilizable es para generar el espacio entre los hijos de Nav*/
 .justify-space-between {
     justify-content: space-between;
 }
+
 .justify-center {
     justify-content: center;
 }
+
+/*Esta Class reutilizable modifica la orientacion del Eje secundario*/
 .alaing-center {
     align-items: center;
 }
 
+/*Esta sección cambia el Nav alineando los items*/
 nav {
     display: flex;
     justify-content: space-between; 
     align-items: center;
 }
 
-/*selector decendiente*/
+/*Aqui se utiliza un Selector decendiente "Contenedor flexible anidado" para alinear los items de vertical a horizantal, uno detras de otro*/
+/*Con justify-content: space-around es obligatorio tener With porque necesita un contenedor para separar los elementos*/
 nav ul {
     display: flex;
     padding: 0;
-    width: 400px;
+    width: 30%;
     justify-content: space-around;
 }
 
+/*Esta Tag name es para quitar los Bullets del Nav list*/
 nav ul li {
     list-style: none;
     text-decoration: none;
 }
 
-/*Se aplica o modifica el estilo para los ancors dentro del Nav*/
+/*Se aplica o modifica el estilo para los Ancors dentro del Nav, Quitar el subrayado*/
 nav ul li a {
     text-decoration: none;
     color: #8e8e8e;
