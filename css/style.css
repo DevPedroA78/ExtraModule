@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.alaing-center {
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+/*selector decendiente*/
+nav ul {
+    display: flex;
+    padding: 0;
+    width: 400px;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+/*Se aplica o modifica el estilo para los ancors dentro del Nav*/
+nav ul li a {
+    text-decoration: none;
+    color: #8e8e8e;
+}
+
+.signmorado {
+    text-decoration: none;
+    background-color: #410FFB;
+    border-radius: 4px;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header{
+    height: 350px;
+    background-color: #f9fff2;
+    padding-left: 85px;
+    padding-right: 85px;
+    background-image : url('../images/MaskGroup.png')
+}
+
+nav ul li .limorado {
+    color: white;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    align-items: center;
+    flex-direction: column;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding-top: 100px;
+}
+
+article{
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 4px;
+    list-style-image: url(../images/checkmark-purple.png);
+    margin-bottom: 10px;
+}
+
+.pgris {
+    color: gray;
+    font-size: 10px;
+}
+
+.morado {
+    background-color:#410FFB;
+    color: white;
+}
+
+.morado ul li {
+    list-style-image: url(../images/whitecheckmark.png);
+}
+
+.botonbco {
+    color: #410FFB;
+    background-color: white;
+    border-radius: 6px;
+    border-color: white;
+    padding: 5px;
+    margin: 10px;
+}
+
+article ul {
+    padding-left: 20px; 
+}
+
+button {
+    border-radius: 6px;
+}
+
+.ulgris {
+    color: gray;
+    font-size: 13px;
+}
+
+.ulgris2 {
+    color: white;
+    font-size: 13px;
+}
+
