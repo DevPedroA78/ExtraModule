@@ -8,8 +8,12 @@ body {
 }
 
 /*Esta Clss mas potente es para reutilizar el Flex en donde se coloque*/
-.container-flex {
+/*.container-flex {
     display: flex;
+}*/
+.container-flex {
+    max-width: 1149px;
+    margin: 0 auto;
 }
 
 /*Esta Class flexible es para cambiar la otientacion de los elementos hijos de Nav*/
@@ -44,7 +48,7 @@ nav ul {
     display: flex;
     padding: 0;
     width: 30%;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 /*Esta Tag name es para quitar los Bullets del Nav list*/
@@ -59,17 +63,32 @@ nav ul li a {
     color: #8e8e8e;
 }
 
-.signmorado {
+/*Esta Class se utiliza para modificar el Sig button con su aplicacion directamente sobre el ANCOR*/
+/*.signmorado {
     text-decoration: none;
     background-color: #410FFB;
     border-radius: 4px;
     font-size: 15px;
     padding-left: 10px;
     padding-right: 10px;
+}*/
+
+/*Esta SEUDOClass sirve para modioficar un item especifico, el 1o, ultimo o nth-of-type(3n)para el numero especifico del item*/
+nav ul li:last-of-type a {
+    background-color: #410FFB;
+    color: white;
+    padding: 7px 20px;
+    border-radius: 4px;
+}
+
+/*Esta SEUDOClass con :hover sirve para cambiar de color el relleno al pasart cursor sobrte boton*/
+nav ul li:last-of-type a:hover {
+    background-color: goldenrod;
+    color: white;
 }
 
 header{
-    height: 350px;
+    height: 400px;
     background-color: #f9fff2;
     padding-left: 85px;
     padding-right: 85px;
@@ -80,19 +99,52 @@ nav ul li .limorado {
     color: white;
 }
 
+/*Esta Class junta la info Pricing y Mockup*/
+.div-position {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*Class Flex ubicar en columna el contenido del Div*/
 div{
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding: 10px;
     align-items: center;
     flex-direction: column;
 }
 
+.mockup-relative {
+    max-height: fit-content;
+}
+
+div div h1 {
+    font-size: 55pt;
+}
+
+/*Cambio de color en texto del Sapn Straong Div*/
+div div p span b {
+    color: rgb(13, 207, 29);
+}
+
+/*Tag para cambiar la Section y su contenido,. separacion y flex*/
 section{
+    width: 1000px;
     display: flex;
     justify-content: space-around;
     align-content: center;
-    padding-top: 100px;
+    padding-top: 120px;
+}
+
+section article {
+    /*border: 10px solid white;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    transform: transform 0.5s;
 }
 
 article{
@@ -117,11 +169,22 @@ article{
     list-style-image: url(../images/whitecheckmark.png);
 }
 
+/*Class para modificar el boton de Items en Article central*/
 .botonbco {
     color: #410FFB;
     background-color: white;
     border-radius: 6px;
     border-color: white;
+    padding: 5px;
+    margin: 10px;
+}
+
+/*Class para modificar el boton de Items en Articles laterales*/
+.botonmrdo {
+    color: white;
+    background-color: #410FFB;
+    border-radius: 6px;
+    border-color: #410FFB;
     padding: 5px;
     margin: 10px;
 }
